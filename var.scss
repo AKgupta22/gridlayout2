@@ -43,7 +43,7 @@ $footercolor: #283342;
 }
 
 @mixin for-normal-mobile {
-    @media (max-width:440px) {
+    @media (max-width:419px) {
         @content;
     }
 }
