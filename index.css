@@ -47,8 +47,6 @@
   min-height: 347px;
   max-height: max-content;
   margin-bottom: 34px;
-  margin-left: 4px;
-  width: 99%;
   display: grid;
   align-items: center;
 }
@@ -111,7 +109,6 @@
   border: none;
   height: 1px;
   margin-top: 5px;
-  width: 99%;
 }
 .container .boxes-container {
   margin-bottom: 30px;
