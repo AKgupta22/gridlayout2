@@ -145,7 +145,7 @@
                 }
 
                 @include for-normal-mobile {
-                    font-size: 1.8rem;
+                    font-size: 1.6rem;
                 }
 
                 @include for-smallest-mobile {
@@ -163,7 +163,7 @@
                 }
 
                 @include for-normal-mobile {
-                    font-size: 1.1rem;
+                    font-size: 1rem;
                 }
 
                 @include for-smallest-mobile {
@@ -175,6 +175,19 @@
                 height: fit-content;
                 margin: 4px;
                 width: 98%;
+
+                @include for-normal-mobile {
+                    height: 10rem;
+                }
+
+                @include for-smaller-mobile {
+                    height: 8rem;
+                }
+
+                @include for-smallest-mobile {
+                    height: 7rem;
+                }
+
             }
 
             .btn-container {
@@ -190,13 +203,6 @@
                         @include btn-hw(30px, 70px);
                     }
 
-                    @include for-normal-mobile {
-                        @include btn-hw(38px, 85px);
-                    }
-
-                    @include for-smallest-mobile {
-                        @include btn-hw(30px, 70px);
-                    }
                 }
 
                 .morebtn {

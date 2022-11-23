@@ -147,7 +147,7 @@
 }
 @media (max-width: 419px) {
   .container .boxes-container .box .title {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
 }
 @media (max-width: 302px) {
@@ -167,7 +167,7 @@
 }
 @media (max-width: 419px) {
   .container .boxes-container .box .des {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 }
 @media (max-width: 302px) {
@@ -179,6 +179,21 @@
   height: fit-content;
   margin: 4px;
   width: 98%;
+}
+@media (max-width: 419px) {
+  .container .boxes-container .box .image {
+    height: 10rem;
+  }
+}
+@media (max-width: 365px) {
+  .container .boxes-container .box .image {
+    height: 8rem;
+  }
+}
+@media (max-width: 302px) {
+  .container .boxes-container .box .image {
+    height: 7rem;
+  }
 }
 .container .boxes-container .box .btn-container {
   margin: auto;
@@ -194,20 +209,6 @@
   width: 84px;
 }
 @media (max-width: 1030px) {
-  .container .boxes-container .box .btn-container .buybtn,
-  .container .boxes-container .box .btn-container .morebtn {
-    height: 30px;
-    width: 70px;
-  }
-}
-@media (max-width: 419px) {
-  .container .boxes-container .box .btn-container .buybtn,
-  .container .boxes-container .box .btn-container .morebtn {
-    height: 38px;
-    width: 85px;
-  }
-}
-@media (max-width: 302px) {
   .container .boxes-container .box .btn-container .buybtn,
   .container .boxes-container .box .btn-container .morebtn {
     height: 30px;
