@@ -1,0 +1,229 @@
+@use 'var' as *;
+
+* {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0
+}
+
+.navbar {
+    background-color: $navbarcolor;
+    height: auto;
+    width: 100%;
+
+    .navbar-container {
+        display: flex;
+        margin: auto;
+        width: 84%;
+
+        @include for-normal-mobile {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .nav-item {
+            color: $licolor;
+            font-size: 1rem;
+            font-weight: 300;
+            list-style: none;
+            margin: 1rem 0px;
+            padding: 0.8rem;
+
+            @include for-normal-mobile {
+                margin: .2rem 0px;
+            }
+        }
+
+        #layout {
+            font-size: 20px;
+            padding: .6rem;
+        }
+    }
+}
+
+.container {
+    margin: 61px auto;
+    width: 84%;
+
+    .midcontainer {
+        background-color: $midcolor;
+        min-height: 347px;
+        max-height: max-content;
+        margin-bottom: 34px;
+        display: $display;
+        align-items: center;
+
+        .innercontainer {
+            margin: auto;
+            width: 90%;
+            display: $display;
+            grid-row-gap: 1rem;
+
+            .innercontainer__btn {
+                @include btn;
+                @include btn-hw(34px, 100px)
+            }
+
+            .innercontainer__des {
+                color: $pcolor;
+                font-size: 21px;
+
+                @include for-smaller-tablet {
+                    font-size: 1.12rem;
+                }
+
+                @include for-smaller-mobile {
+                    font-size: 1rem;
+                }
+            }
+
+            .innercontainer__head {
+                color: $h2color;
+                font-size: 4rem;
+                font-weight: 300;
+
+                @include for-smaller-tablet {
+                    font-size: 3rem;
+                }
+
+                @include for-smaller-mobile {
+                    font-size: 2rem;
+                }
+            }
+
+        }
+    }
+
+    .container-heading {
+        color: $h3color;
+        font-size: 24px;
+        font-weight: 100;
+        margin-top: 2rem;
+
+        @include for-normal-mobile {
+            text-align: center;
+        }
+    }
+
+    .container-hr {
+        background-color: $hrcolor;
+        border: none;
+        height: 1px;
+        margin-top: 5px;
+    }
+
+    .boxes-container {
+        margin-bottom: 30px;
+        margin-top: 16px;
+        display: $display;
+        grid-template-columns: auto auto auto auto;
+        grid-column-gap: .5rem;
+
+        @include for-normal-tablet {
+            grid-template-columns: auto auto;
+        }
+
+        @include for-normal-mobile {
+            grid-template-columns: auto;
+            grid-column-gap: 0;
+            grid-row-gap: .5rem;
+        }
+
+        .box {
+            border: 2px solid $boxcolor;
+            border-radius: 4px;
+            display: $display;
+            grid-row-gap: 0.5rem;
+
+            .title {
+                color: $pcolor;
+                font-size: 27px;
+                text-align: center;
+
+                @include for-small-desktop {
+                    font-size: 1.4rem;
+                }
+
+                @include for-normal-mobile {
+                    font-size: 1.6rem;
+                }
+
+                @include for-smallest-mobile {
+                    font-size: 1.4rem;
+                }
+            }
+
+            .des {
+                color: $descolor;
+                font-size: 18px;
+                text-align: center;
+
+                @include for-small-desktop {
+                    font-size: 0.8rem;
+                }
+
+                @include for-normal-mobile {
+                    font-size: 1rem;
+                }
+
+                @include for-smallest-mobile {
+                    font-size: 0.9rem;
+                }
+            }
+
+            .image {
+                height: fit-content;
+                margin: 4px;
+                width: 98%;
+
+                @include for-normal-mobile {
+                    height: 10rem;
+                }
+
+                @include for-smaller-mobile {
+                    height: 8rem;
+                }
+
+                @include for-smallest-mobile {
+                    height: 7rem;
+                }
+
+            }
+
+            .btn-container {
+                margin: auto;
+                margin-bottom: 1rem;
+
+                .buybtn,
+                .morebtn {
+                    @include btn;
+                    @include btn-hw(32px, 84px);
+
+                    @include for-small-desktop {
+                        @include btn-hw(30px, 70px);
+                    }
+
+                }
+
+                .morebtn {
+                    background-color: $morebtncolor;
+                    border: 2px solid $morebtnborder;
+                    color: $descolor;
+                    margin-left: 2px
+                }
+            }
+
+        }
+
+    }
+}
+
+.footer {
+    height: 60px;
+    margin: auto;
+    width: 84%;
+
+    .text {
+        color: $footercolor;
+    }
+}

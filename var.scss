@@ -1,0 +1,61 @@
+$display: grid;
+$navbarcolor: #222;
+$licolor: #74756d;
+$midcolor: #eee;
+$pcolor: #000;
+$h2color: #424141;
+$h3color: #161616f2;
+$hrcolor: #f3f0f0;
+$boxcolor: #efecec;
+$descolor: #3e3f40;
+$morebtncolor: #fff;
+$morebtnborder: #e1dcdc;
+$footercolor: #283342;
+
+@mixin btn {
+    background-color: #428bca;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+}
+
+@mixin btn-hw($h, $w) {
+    height: $h;
+    width: $w;
+}
+
+@mixin for-small-desktop {
+    @media (max-width:1030px) {
+        @content;
+    }
+}
+
+@mixin for-normal-tablet {
+    @media (max-width:836px) {
+        @content;
+    }
+}
+
+@mixin for-smaller-tablet {
+    @media (max-width:598px) {
+        @content;
+    }
+}
+
+@mixin for-normal-mobile {
+    @media (max-width:419px) {
+        @content;
+    }
+}
+
+@mixin for-smaller-mobile {
+    @media (max-width:365px) {
+        @content;
+    }
+}
+
+@mixin for-smallest-mobile {
+    @media (max-width:302px) {
+        @content;
+    }
+}
